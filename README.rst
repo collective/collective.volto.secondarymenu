@@ -1,7 +1,7 @@
 
-===================
+====================
 Volto Secondary Menu
-===================
+====================
 
 Add-on for Volto to manage a secondary menu (right column) for `Dropdown Menu`_.
 
