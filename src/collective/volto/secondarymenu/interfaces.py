@@ -9,7 +9,8 @@ import json
 class ISecondaryMenu(IControlpanel):
     secondary_menu_configuration = SourceText(
         title=_(
-            "secondary_menu_configuration_label", default="Menu configuration"
+            "secondary_menu_configuration_label",
+            default="Secondary menu configuration",
         ),
         description="",
         required=True,

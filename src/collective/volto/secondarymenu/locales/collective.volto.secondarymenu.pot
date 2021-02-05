@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-09-22 08:13+0000\n"
+"POT-Creation-Date: 2021-02-05 14:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,32 +17,32 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.volto.secondarymenu\n"
 
-#: collective/volto/dropdownmenu/profiles/default/controlpanel.xml
-msgid "Secondary Menu settings"
-msgstr ""
-
-#: collective/volto/dropdownmenu/configure.zcml:21
+#: collective/volto/secondarymenu/configure.zcml:21
 msgid "Installs the collective.volto.secondarymenu add-on."
 msgstr ""
 
-#: collective/volto/dropdownmenu/configure.zcml:30
+#: collective/volto/secondarymenu/profiles/default/controlpanel.xml
+msgid "Secondary Menu settings"
+msgstr ""
+
+#: collective/volto/secondarymenu/configure.zcml:30
 msgid "Uninstalls the collective.volto.secondarymenu add-on."
 msgstr ""
 
-#: collective/volto/dropdownmenu/configure.zcml:21
+#: collective/volto/secondarymenu/configure.zcml:21
 msgid "Volto Secondary Menu"
 msgstr ""
 
-#: collective/volto/dropdownmenu/configure.zcml:30
+#: collective/volto/secondarymenu/configure.zcml:30
 msgid "Volto Secondary Menu (uninstall)"
 msgstr ""
 
-#. Default: "Secondary Menu Settings"
-#: collective/volto/dropdownmenu/browser/controlpanel.py:10
-msgid "dropdown_menu_settings_label"
+#. Default: "Secondary menu configuration"
+#: collective/volto/secondarymenu/interfaces.py:11
+msgid "secondary_menu_configuration_label"
 msgstr ""
 
-#. Default: "Menu configuration"
-#: collective/volto/dropdownmenu/interfaces.py:10
-msgid "secondary_menu_configuration_label"
+#. Default: "Secondary Menu Settings"
+#: collective/volto/secondarymenu/browser/controlpanel.py:10
+msgid "secondary_menu_settings_label"
 msgstr ""
