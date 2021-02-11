@@ -5,7 +5,8 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Handle Unauthorized on private links.
+  [cekk]
 
 
 1.0.1 (2021-02-05)
