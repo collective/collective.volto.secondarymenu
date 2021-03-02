@@ -15,11 +15,14 @@ class SecondaryMenuGet(Service):
         super(SecondaryMenuGet, self).__init__(context, request)
 
     def reply(self):
-        record = api.portal.get_registry_record(
-            "secondary_menu_configuration",
-            interface=ISecondaryMenu,
-            default="",
-        )
+        try:
+            record = api.portal.get_registry_record(
+                "secondary_menu_configuration",
+                interface=ISecondaryMenu,
+                default="",
+            )
+        except KeyError:
+            return []
         if not record:
             return []
         return serialize_data(json_data=record)

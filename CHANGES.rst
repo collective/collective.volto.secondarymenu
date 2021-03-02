@@ -5,7 +5,8 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not break endpoint if product is not installed.
+  [cekk]
 
 
 1.0.2 (2021-02-11)
