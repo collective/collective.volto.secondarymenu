@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.3 (unreleased)
+1.0.3 (2021-03-02)
 ------------------
 
 - Do not break endpoint if product is not installed.
