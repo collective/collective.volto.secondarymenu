@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.volto.secondarymenu",
-    version="1.0.4.dev0",
+    version="1.1.0",
     description="Add-on for Volto to manage a secondary menu in dropdown one.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
