@@ -5,7 +5,8 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added Spanish translations.
+  [macagua]
 
 
 1.1.0 (2021-10-10)
