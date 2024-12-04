@@ -23,7 +23,7 @@ msgstr "Install collective.volto.secondarymenu."
 
 #: collective/volto/secondarymenu/profiles/default/controlpanel.xml
 msgid "Secondary Menu settings"
-msgstr "Impostazioni Menu Secondario"
+msgstr "Menu secondario"
 
 #: collective/volto/secondarymenu/configure.zcml:30
 msgid "Uninstalls the collective.volto.secondarymenu add-on."
@@ -45,4 +45,4 @@ msgstr "Menu secondario"
 #. Default: "Secondary Menu Settings"
 #: collective/volto/secondarymenu/browser/controlpanel.py:10
 msgid "secondary_menu_settings_label"
-msgstr "Impostazioni Menu Secondario"
+msgstr "Impostazioni menu secondario"

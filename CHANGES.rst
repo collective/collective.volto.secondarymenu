@@ -7,6 +7,8 @@ Changelog
 
 - Added Spanish translations.
   [macagua]
+- Update translation
+  [lucabel]
 
 
 1.1.0 (2021-10-10)
