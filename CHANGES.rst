@@ -5,7 +5,8 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Changed control panel for site administrator permissions
+   [simone]
 
 
 1.1.1 (2024-12-12)
