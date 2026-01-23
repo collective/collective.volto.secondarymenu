@@ -32,7 +32,7 @@ class TestSetup(unittest.TestCase):
     def test_product_installed(self):
         """Test if collective.volto.secondarymenu is installed."""
         self.assertTrue(
-            self.installer.isProductInstalled("collective.volto.secondarymenu")
+            _is_installed(self.installer, "collective.volto.secondarymenu")
         )
 
     def test_browserlayer(self):
@@ -59,13 +59,13 @@ class TestUninstall(unittest.TestCase):
             self.installer = api.portal.get_tool("portal_quickinstaller")
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer.uninstallProducts(["collective.volto.secondarymenu"])
+        _uninstall(self.installer, "collective.volto.secondarymenu")
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
         """Test if collective.volto.secondarymenu is cleanly uninstalled."""
         self.assertFalse(
-            self.installer.isProductInstalled("collective.volto.secondarymenu")
+            _is_installed(self.installer, "collective.volto.secondarymenu")
         )
 
     def test_browserlayer_removed(self):
@@ -78,3 +78,15 @@ class TestUninstall(unittest.TestCase):
         self.assertNotIn(
             ICollectiveVoltoSecondaryMenuLayer, utils.registered_layers()
         )
+
+
+def _is_installed(installer, product_id):
+    if hasattr(installer, "is_product_installed"):
+        return installer.is_product_installed(product_id)
+    return installer.isProductInstalled(product_id)
+
+
+def _uninstall(installer, product_id):
+    if hasattr(installer, "uninstall_product"):
+        return installer.uninstall_product(product_id)
+    return installer.uninstallProducts([product_id])
